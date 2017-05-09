@@ -9,8 +9,8 @@ __author__ = u'Aranna'
 if __name__ == u'__main__':
 	# este código faz a leitura de um arquivo de REMESSA do banco para nós
 	# ele faz a checagem de cada dado e separa numa estrutura em árvore para facilitar a leitura dos dados (desenvolvimento)
-	
-	from pyfebraban.banco_do_brasil import ArquivoBB
+
+	from banco_do_brasil import ArquivoBB
 
 	a = ArquivoBB()
 
