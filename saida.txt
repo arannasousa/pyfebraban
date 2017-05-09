@@ -1,0 +1,157 @@
+**************************************************
+---- pyfebraban.febraban.header
+-------- pyfebraban.febraban.header.controle
+------------ (01.0-G001)[1:3][3] banco=001
+------------ (02.0-*G002)[4:7][4] lote=0000
+------------ (03.0-*G003)[8:8][1] registro=0
+------------ (04.0-G004)[9:17][9] CNAB040=         
+-------- pyfebraban.febraban.header.empresa
+------------ pyfebraban.febraban.header.empresa.Inscricao
+---------------- (05.0-*G005)[18:18][1] tipo=2
+---------------- (06.0-*G006)[19:32][14] numero=14061959000141
+------------ (07.0-*G007)[33:52][20] convenio=123456789012345678  
+------------ pyfebraban.febraban.header.empresa.ContaCorrente
+---------------- pyfebraban.febraban.header.empresa.ContaCorrente.Agencia
+-------------------- (08.0-*G008)[53:57][5] codigo=03962
+-------------------- (09.0-*G009)[58:58][1] dv=4
+---------------- pyfebraban.febraban.header.empresa.ContaCorrente.Conta
+-------------------- (10.0-*G010)[59:70][12] numero=000000012345
+-------------------- (11.0-*G011)[71:71][1] dv=9
+---------------- (12.0-*G012)[72:72][1] dv= 
+------------ (13.0-G013)[73:102][30] nome=TINS - SOLUCOES CORPORATIVAS E
+------------ (14.0-G014)[103:132][30] nome_banco=BANCO DO BRASIL S/A           
+------------ (15.0-G004)[133:142][10] CNAB150=          
+-------- pyfebraban.febraban.header.arquivodados.Arquivo
+------------ (16.0-G015)[143:143][1] codigo=1
+------------ (17.0-G016)[144:151][8] data_geracao=02042015
+------------ (18.0-G017)[152:157][6] hora_geracao=104149
+------------ (19.0-*G018)[158:163][6] sequencia=000021
+------------ (20.0-*G019)[164:166][3] layout=084
+------------ (21.0-G020)[167:171][5] densidade=01600
+------------ (21.0-G021)[172:191][20] reservado_banco=
+                   
+------------ (22.0-G022)[192:211][20] reservado_empresa=                    
+------------ (24.0-G004)[212:240][29] CNAB240=                             
+---- pyfebraban.febraban.lotes.titulocobranca
+-------- pyfebraban.febraban.lotes.titulocobranca.header
+------------ pyfebraban.febraban.lotes.titulocobranca.header.controle
+---------------- (01.1-G001)[1:3][3] banco=001
+---------------- (02.1-*G002)[4:7][4] lote=0001
+---------------- (03.1-*G003)[8:8][1] registro=1
+------------ pyfebraban.febraban.lotes.titulocobranca.header.servico
+---------------- (04.1-*G028)[9:9][1] operacao=R
+---------------- (05.1-*G025)[10:11][2] servico=01
+---------------- (06.1-G004)[12:13][2] CNAB061=00
+---------------- (07.1-*G030)[14:16][3] layout_lote=084
+------------ (08.1-G004)[17:17][1] CNAB081= 
+------------ pyfebraban.febraban.lotes.titulocobranca.header.empresa
+---------------- pyfebraban.febraban.lotes.titulocobranca.header.empresa.Incricao
+-------------------- (09.1-*G005)[18:18][1] tipo=2
+-------------------- (10.1-*G006)[19:33][15] numero=014061959000141
+---------------- (11.1-*G007)[34:53][20] convenio=123456789012345678  
+---------------- pyfebraban.febraban.lotes.titulocobranca.header.empresa.ContaCorrente
+-------------------- pyfebraban.febraban.lotes.titulocobranca.header.empresa.ContaCorrente.Agencia
+------------------------ (12.1-*G008)[54:58][5] codigo=03962
+------------------------ (13.1-*G009)[59:59][1] dv=4
+-------------------- pyfebraban.febraban.lotes.titulocobranca.header.empresa.ContaCorrente.Conta
+------------------------ (14.1-*G010)[60:71][12] numero=000000012345
+------------------------ (15.1-*G011)[72:72][1] dv=9
+-------------------- (16.1-*G012)[73:73][1] dv=T
+---------------- (17.1-G013)[74:103][30] nome=INS - SOLUCOES CORPORATIVAS E 
+------------ (18.1-C073)[104:143][40] informacao1=                                        
+------------ (19.1-C073)[144:183][40] informacao2=                                        
+------------ pyfebraban.febraban.lotes.titulocobranca.header.controle_cobranca
+---------------- (20.1-G079)[184:191][8] numero_rem_ret=00000021
+---------------- (21.1-G068)[192:199][8] data_gravacao=02042015
+------------ (22.1-C003)[200:207][8] data_credito=00000000
+------------ (23.1-G004)[208:240][33] CNAB231=
+                                
+-------- pyfebraban.febraban.lotes.titulocobranca.trailer
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.controle
+---------------- (01.5-G001)[1:3][3] banco=001
+---------------- (02.5-*G002)[4:7][4] lote=0001
+---------------- (03.5-*G003)[8:8][1] registro=5
+------------ (04.5-G004)[9:17][9] CNAB045=         
+------------ (05.5-*G057)[18:23][6] qtd_registros=000002
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.totais_cobranca_simples
+---------------- (06.5-*C070)[24:29][6] qtd=000000
+---------------- (07.5-*C071)[30:46][17] valor=00000000000000000
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.totais_cobranca_vinculada
+---------------- (08.5-*C070)[47:52][6] qtd=000000
+---------------- (09.5-*C071)[53:69][17] valor=00000000000000000
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.totais_cobranca_caucionada
+---------------- (10.5-*C070)[70:75][6] qtd=000000
+---------------- (11.5-*C071)[76:92][17] valor=00000000000000000
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.totais_cobranca_descontada
+---------------- (12.5-*C070)[93:98][6] qtd=000000
+---------------- (13.5-*C071)[99:115][17] valor=00000000000000000
+------------ (14.5-*C072)[116:123][8] numero_aviso_lancamento=00000000
+------------ (15.5-C004)[124:240][117] CNAB155=                                                                                                                     
+---- pyfebraban.febraban.lotes.titulocobranca
+-------- pyfebraban.febraban.lotes.titulocobranca.header
+------------ pyfebraban.febraban.lotes.titulocobranca.header.controle
+---------------- (01.1-G001)[1:3][3] banco=001
+---------------- (02.1-*G002)[4:7][4] lote=0002
+---------------- (03.1-*G003)[8:8][1] registro=1
+------------ pyfebraban.febraban.lotes.titulocobranca.header.servico
+---------------- (04.1-*G028)[9:9][1] operacao=R
+---------------- (05.1-*G025)[10:11][2] servico=01
+---------------- (06.1-G004)[12:13][2] CNAB061=00
+---------------- (07.1-*G030)[14:16][3] layout_lote=084
+------------ (08.1-G004)[17:17][1] CNAB081= 
+------------ pyfebraban.febraban.lotes.titulocobranca.header.empresa
+---------------- pyfebraban.febraban.lotes.titulocobranca.header.empresa.Incricao
+-------------------- (09.1-*G005)[18:18][1] tipo=2
+-------------------- (10.1-*G006)[19:33][15] numero=014061959000141
+---------------- (11.1-*G007)[34:53][20] convenio=123456789012345678  
+---------------- pyfebraban.febraban.lotes.titulocobranca.header.empresa.ContaCorrente
+-------------------- pyfebraban.febraban.lotes.titulocobranca.header.empresa.ContaCorrente.Agencia
+------------------------ (12.1-*G008)[54:58][5] codigo=03962
+------------------------ (13.1-*G009)[59:59][1] dv=4
+-------------------- pyfebraban.febraban.lotes.titulocobranca.header.empresa.ContaCorrente.Conta
+------------------------ (14.1-*G010)[60:71][12] numero=000000012345
+------------------------ (15.1-*G011)[72:72][1] dv=9
+-------------------- (16.1-*G012)[73:73][1] dv=A
+---------------- (17.1-G013)[74:103][30] nome=RANNA - SOLUCOES CORPORATIV E 
+------------ (18.1-C073)[104:143][40] informacao1=                                        
+------------ (19.1-C073)[144:183][40] informacao2=                                        
+------------ pyfebraban.febraban.lotes.titulocobranca.header.controle_cobranca
+---------------- (20.1-G079)[184:191][8] numero_rem_ret=00000021
+---------------- (21.1-G068)[192:199][8] data_gravacao=02042015
+------------ (22.1-C003)[200:207][8] data_credito=00000000
+------------ (23.1-G004)[208:240][33] CNAB231=
+                                
+-------- pyfebraban.febraban.lotes.titulocobranca.trailer
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.controle
+---------------- (01.5-G001)[1:3][3] banco=001
+---------------- (02.5-*G002)[4:7][4] lote=0001
+---------------- (03.5-*G003)[8:8][1] registro=5
+------------ (04.5-G004)[9:17][9] CNAB045=         
+------------ (05.5-*G057)[18:23][6] qtd_registros=000002
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.totais_cobranca_simples
+---------------- (06.5-*C070)[24:29][6] qtd=000000
+---------------- (07.5-*C071)[30:46][17] valor=00000000000000000
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.totais_cobranca_vinculada
+---------------- (08.5-*C070)[47:52][6] qtd=000000
+---------------- (09.5-*C071)[53:69][17] valor=00000000000000000
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.totais_cobranca_caucionada
+---------------- (10.5-*C070)[70:75][6] qtd=000000
+---------------- (11.5-*C071)[76:92][17] valor=00000000000000000
+------------ pyfebraban.febraban.lotes.titulocobranca.trailer.totais_cobranca_descontada
+---------------- (12.5-*C070)[93:98][6] qtd=000000
+---------------- (13.5-*C071)[99:115][17] valor=00000000000000000
+------------ (14.5-*C072)[116:123][8] numero_aviso_lancamento=00000000
+------------ (15.5-C004)[124:240][117] CNAB155=                                                                                                                     
+---- pyfebraban.febraban.trailer
+-------- pyfebraban.febraban.trailer.controle
+------------ (01.9-G001)[1:3][3] banco=001
+------------ (02.9-*G002)[4:7][4] lote=9999
+------------ (03.9-*G003)[8:8][1] registro=9
+-------- (04.9-G004)[9:17][9] CNAB040=         
+-------- pyfebraban.febraban.trailer.totais
+------------ (05.9-G049)[18:23][6] qtd_lotes=000001
+------------ (06.9-G056)[24:29][6] qtd_registros=000004
+------------ (07.9-*G037)[30:35][6] qtd_contas_conciliacao=000000
+-------- (08.9-G004)[36:240][205] CNAB089=
+                                                                                                                                                                                                            
+**************************************************
